@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./src/styles.css">
+<script src="https://kit.fontawesome.com/4d03ea8716.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+  </head>
+  <body>
+
+    <div class="container">
+<div class="card">
+   
+  <form name= "myForm" id ="form-input" method="post">
+  <div class="row-form">
+  <div class="col-sm-12"> 
+  <div class="mb">
+    <input type="text" id = "city-input" name="form-city" class="form-control" placeholder="City">
+      </div>  
+  <div class="col-sm-12">
+<button type="button" id="enter-city" class="btn btn-outline-danger">Enter</button>
+<button type="button" id="current-location-button" class="btn btn-outline-danger">Current</button>
+
+</div>
+</div>  
+
+</form>
+ <h1 .temperature id="temperature-data"><span id="bigger-text"></span></h1>
+  <p .temperature-symbols>  <a href="#" id= "celcius">°c</a> | <a href="#" id= "fahrenheit">°f </a></p>
+
+      <h1 .city > <i class="fas fa-cloud"></i> 
+      </br>
+      <spam id="h1-city"></spam></h1>
+      
+
+     <p .feelslike>
+
+<div class="feedback" id="feedback">
+<em><span id="description-weather">
+ </span>
+
+</div>
+        <ul>
+          <em>
+          <li> <spam id="day-input"></spam>
+        <spam id="hour-input"></spam>:<spam id="minutes-input"></spam></li>
+          <li>feels like <strong><span id="feels-like"></span>°c </strong></li>
+          <li>humidity <strong><span id= "humidity"></span>%</strong></li>
+          <li>wind <strong><span id="wind"></span> km/h</strong></li>
+        </ul> </em>
+    </p>
+
+<div class="row-images">
+<div class="col-sm-1">
+  <i class="fas fa-cloud"></i>
+</div>
+<div class="col-sm-1">
+<i class="fas fa-cloud-sun"></i>
+
+</div>
+<div class="col-sm-1">
+<i class="far fa-sun"></i>
+</div>
+<div class="col-sm-1">
+<i class="fas fa-cloud-sun"></i>
+
+</div>
+<div class="col-sm-1">
+<i class="fas fa-cloud-sun"></i>
+
+</div>
+<div class="col-sm-1">
+<i class="fas fa-cloud-sun"></i>
+
+</div>
+<div class="col-sm-1">
+<i class="far fa-sun"></i>
+</div>
+
+
+</div>
+
+      <div class="row-days">
+        <div class="col-sm-1"> <strong>MO</strong></div>
+        <div class="col-sm-1">TUE</div>
+        <div class="col-sm-1">WED</div>
+        <div class="col-sm-1">THU</div>
+        <div class="col-sm-1">FRI</div>
+        <div class="col-sm-1">SAT</div>
+        <div class="col-sm-1">SUN</div>
+      </div>
+<div class="row-temperature">
+<div class="col-sm-1"> <strong>19°c</strong></div>
+<div class="col-sm-1"> 19°c </div>
+<div class="col-sm-1"> 20°c </div>
+<div class="col-sm-1"> 21°c </div>
+<div class="col-sm-1"> 22°c </div>
+<div class="col-sm-1"> 19°c </div>
+<div class="col-sm-1"> 20°c </div>
+
+</div>
+
+    </div>
+</div>
+
+    <script src="./src/weatherapp.js"></script>
+
+  </body>
+</html>
