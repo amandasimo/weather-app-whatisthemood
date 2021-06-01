@@ -66,7 +66,7 @@ navigator.geolocation.getCurrentPosition(showLocation);
 }
 
 let buttonPressed = document.querySelector ("#enter-city");
-buttonPressed.addEventListener("click", displaySearchedCity);
+buttonPressed.addEventListener("submit", displaySearchedCity);
 
 let currentLocationButton = document.querySelector ("#current-location-button");
 currentLocationButton.addEventListener("click", getLocation);
