@@ -78,6 +78,17 @@ a,
   text-decoration: none;
 }
 
+a,
+#link-code {
+  color: #ff3366;
+  text-decoration: none;
+}
+
+a,
+#link-code:hover {
+  color: #ff3366;
+}
+
 a:hover {
   color: #ff3366;
 }
