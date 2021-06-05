@@ -67,10 +67,9 @@ navigator.geolocation.getCurrentPosition(showLocation);
 
 let buttonPressed = document.querySelector("#enter-city").addEventListener('keypress', function (e) {
     if (e.key === 'Enter') {
-      // code for enter
+    displaySearchedCity();
     }
 });
-
 
 //let buttonPressed = document.querySelector ("#enter-city");
 //buttonPressed.addEventListener("submit", displaySearchedCity);
