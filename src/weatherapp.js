@@ -65,28 +65,26 @@ event.preventDefault();
 navigator.geolocation.getCurrentPosition(showLocation);
 }
 
-let buttonPressed = document.querySelector("#enter-city").addEventListener('keypress', function (e) {
-    if (e.key === 'Enter') {
-    displaySearchedCity();
-    }
+let enterPressed = document.querySelector("#city-input").addEventListener('keypress', function (e) {
+  if (e.key === 'Enter') {
+   displaySearchedCity(e);
+  }
 });
 
-//let buttonPressed = document.querySelector ("#enter-city");
-//buttonPressed.addEventListener("submit", displaySearchedCity);
+let buttonPressed = document.querySelector ("#enter-city");
+buttonPressed.addEventListener("click", displaySearchedCity);
 
 let currentLocationButton = document.querySelector ("#current-location-button");
 currentLocationButton.addEventListener("click", getLocation);
 
-getCity("Punta Cana");
+//getCity("Punta Cana");
 
-function getFahrenheit (event) {
-  event.preventDefault();
-let fahrenheitTemperature = document.querySelector ("#fahrenheit");
-fahrenheitTemperature.innerHTML = (Math.round(response.data.main.temp)*1.8)+32;
-
-}
-
-fahrenheitTemperature.addEventListener ("click", getFahrenheit);
+//function getFahrenheit (event) {
+//  event.preventDefault();
+//let fahrenheitTemperature = document.querySelector ("#fahrenheit");
+//fahrenheitTemperature.innerHTML = (Math.round(response.data.main.temp)*1.8)+32;
+//}
+//fahrenheitTemperature.addEventListener ("click", getFahrenheit);
 
 
   
