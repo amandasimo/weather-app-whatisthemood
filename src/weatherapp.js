@@ -77,7 +77,7 @@ buttonPressed.addEventListener("click", displaySearchedCity);
 let currentLocationButton = document.querySelector ("#current-location-button");
 currentLocationButton.addEventListener("click", getLocation);
 
-//getCity("Punta Cana");
+getCity("Punta Cana");
 
 //function getFahrenheit (event) {
 //  event.preventDefault();
