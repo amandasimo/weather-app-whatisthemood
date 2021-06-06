@@ -8,15 +8,15 @@ let day = document.querySelector ("#day-input");
 day.innerHTML = days [now.getDay()];
 let hours = document.querySelector("#hour-input");
 hours.innerHTML = now.getHours();
-minutes.innerHTML = now.getMinutes();
-if (hours < 10) {
+if (hours<10) {
   hours = `0${hours}`;
 }
 let minutes = document.querySelector ("#minutes-input");
 minutes.innerHTML = now.getMinutes();
-if (minutes < 10) {
+if (minutes<10) {
   minutes = `0${minutes}`;
 }
+
 }
 
 gettingTheDate ();
@@ -93,8 +93,6 @@ getCity("Punta Cana");
 //}
 //fahrenheitTemperature.addEventListener ("click", getFahrenheit);
 
-
-  
 
 
 //function getFahrenheit (event) {
