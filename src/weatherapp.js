@@ -1,7 +1,7 @@
 
 
 
-function gettingTheDate (event) {
+function gettingTheDate () {
 let now = new Date();
 let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 let day = document.querySelector ("#day-input");
@@ -18,7 +18,6 @@ if (minutes<10) {
 }
 
 }
-
 gettingTheDate ();
 
 function displaySearchedCity (event) {
@@ -37,8 +36,8 @@ document.querySelector("#feels-like").innerHTML= Math.round(response.data.main.f
 document.querySelector("#humidity").innerHTML= response.data.main.humidity;
 document.querySelector("#wind").innerHTML= response.data.wind.speed;
 document.querySelector("#description-weather").innerHTML=response.data.weather[0].description;
-
-console.log(response.data);
+let iconElement = document.querySelector ("#icon-weather");
+iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 }
 
 function displayCityData (response) {
