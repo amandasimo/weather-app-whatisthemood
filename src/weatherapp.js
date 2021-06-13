@@ -38,6 +38,8 @@ document.querySelector("#wind").innerHTML= response.data.wind.speed;
 document.querySelector("#description-weather").innerHTML=response.data.weather[0].description;
 let iconElement = document.querySelector ("#icon-weather");
 iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+iconElement.setAttribute("alt", response.data.weather[0].description);
+
 }
 
 function displayCityData (response) {
