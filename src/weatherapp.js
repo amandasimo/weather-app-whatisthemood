@@ -112,44 +112,4 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 let celciusLink = document.querySelector ("#celcius");
 celciusLink.addEventListener ("click", displayCelciusTemperature);
 
-
-
-
 getCity("Punta Cana");
-
-
-
-
-
-
-//function getFahrenheit (event) {
-//  event.preventDefault();
-//let fahrenheitTemperature = document.querySelector ("#fahrenheit");
-//fahrenheitTemperature.innerHTML = (Math.round(response.data.main.temp)*1.8)+32;
-//}
-//fahrenheitTemperature.addEventListener ("click", getFahrenheit);
-
-
-
-//function getFahrenheit (event) {
-
- // event.preventDefault();
-//let temperature = document.querySelector ("#temperature-data");
-  //temperature.innerHTML = 66;
-//}
-
-//let fahrenheitTemperature = document.querySelector ("#fahrenheit");
-//fahrenheitTemperature.addEventListener ("click", getFahrenheit);
-
-
-//function getCelcius (event) {
-
-  //event.preventDefault();
-//let temperature = document.querySelector ("#temperature-data");
-
-  //temperature.innerHTML = 19;
-//}
-
-//let celciusTemperature = document.querySelector ("#celcius");
-//celciusTemperature.addEventListener ("click", getCelcius);
-
