@@ -29,7 +29,8 @@ getCity (cityInput.value);
 }
 
 function displayWeather (response) {
-let temperature = Math.round(response.data.main.temp);
+celciusTemperature = response.data.main.temp;
+let temperature = Math.round(celciusTemperature);
 let temperatureElement = document.querySelector ("#temperature-data");
 temperatureElement.innerHTML = `${temperature}`;
 document.querySelector("#feels-like").innerHTML= Math.round(response.data.main.feels_like);
@@ -73,11 +74,31 @@ event.preventDefault();
 navigator.geolocation.getCurrentPosition(showLocation);
 }
 
+function displayFahrenheitTemperature(event){
+event.preventDefault();
+let temperatureElement = document.querySelector("#temperature-data");
+celciusLink.classList.remove("active");
+fahrenheitLink.classList.add("active");
+let fahrenheitTemperature= (celciusTemperature * 9) / 5 +32;
+temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+}
+
+function displayCelciusTemperature (event) {
+  event.preventDefault();
+fahrenheitLink.classList.remove("active");
+celciusLink.classList.add("active");
+
+  let temperatureElement = document.querySelector("#temperature-data");
+temperatureElement.innerHTML = Math.round(celciusTemperature);
+}
+
 let enterPressed = document.querySelector("#city-input").addEventListener('keypress', function (e) {
   if (e.key === 'Enter') {
    displaySearchedCity(e);
   }
 });
+
+let celciusTemperature = null;
 
 let buttonPressed = document.querySelector ("#enter-city");
 buttonPressed.addEventListener("click", displaySearchedCity);
@@ -85,7 +106,21 @@ buttonPressed.addEventListener("click", displaySearchedCity);
 let currentLocationButton = document.querySelector ("#current-location-button");
 currentLocationButton.addEventListener("click", getLocation);
 
+let fahrenheitLink = document.querySelector("#fahrenheit");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+
+let celciusLink = document.querySelector ("#celcius");
+celciusLink.addEventListener ("click", displayCelciusTemperature);
+
+
+
+
 getCity("Punta Cana");
+
+
+
+
+
 
 //function getFahrenheit (event) {
 //  event.preventDefault();

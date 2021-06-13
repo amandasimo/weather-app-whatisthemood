@@ -160,3 +160,12 @@ ul {
 #feels-like #humidity #wind {
   border-color: white;
 }
+
+.symbols-temperature .active {
+  color: white;
+  cursor: default;
+}
+
+.symbols-temperature .active:hover {
+  text-decoration: none;
+}
