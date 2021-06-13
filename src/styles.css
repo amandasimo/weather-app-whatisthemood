@@ -133,5 +133,8 @@ ul {
 }
 
 .weather-forecast {
-  padding-bottom: 20px;
+  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-right: 125px;
+  padding-left: 125px;
 }
