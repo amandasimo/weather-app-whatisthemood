@@ -93,57 +93,12 @@ a:hover {
   color: #ff3366;
 }
 
-.week-days {
-  text-align: center;
-}
-
-.row-days {
-  text-align: center;
-  padding-top: 0px;
-  display: block;
-  font-size: smaller;
-}
-
-.row-days .col-sm-1 {
-  display: inline-block;
-  vertical-align: middle;
-  float: none;
-}
-
-.row-temperature .row-images {
-  text-align: center;
-  display: block;
-}
-
-.row-temperature .col-sm-1 {
-  display: inline-block;
-  vertical-align: middle;
-  float: none;
-  padding-bottom: 50px;
-}
-
-.row-images .col-sm-1 {
-  display: inline-block;
-  vertical-align: middle;
-  float: none;
-  padding-bottom: 0px;
-  padding-top: 100px;
-}
-
 .feedback {
   margin: 0px;
   padding: 0px;
   font-size: 15px;
   color: white;
   text-align: center;
-}
-
-.fas .fa-cloud {
-  font-size: 100px;
-}
-
-.fas .fa-cloud-sun {
-  font-size: 200px;
 }
 
 li {
@@ -168,4 +123,15 @@ ul {
 
 .symbols-temperature .active:hover {
   text-decoration: none;
+}
+
+.weather-forecast-days {
+  font-size: 15px;
+}
+.weather-forecast-temperature {
+  font-size: 12px;
+}
+
+.weather-forecast {
+  padding-bottom: 20px;
 }
